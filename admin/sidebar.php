@@ -89,18 +89,85 @@ echo '<div class="sidebar-wrapper sidebar-theme">
                             <a href="addvol.php"> Add Volunteer </a>
                         </li>
                         <li>
-                            <a href="user_account_setting.html"> View Volunteers </a>
+                            <a href="#"> View Volunteers </a>
                         </li>
 
                         
 
-                        
+
 
                        
 
                        
                     </ul>
                 </li>
+
+
+
+
+                <li class="menu">
+                        <a href="#ecommerce" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                            <i class="flaticon-user-group"></i>
+                                <span>Sub-Admins</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="ecommerce" data-parent="#accordionExample">
+                            <li>
+                                <a href="adsubadmin.php"> Add Sub-Admin </a>
+                            </li>
+                            <li>
+                                <a href="#"> View Sub-Admin </a>
+                            </li>
+                            
+                           
+                            
+                           
+                        </ul>
+                    </li>
+
+                    <li class="menu">
+                        <a href="#ui-features" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                            <div class="">
+                                <i class="flaticon-elements"></i>
+                                <span>Vouchers</span>
+                            </div>
+                            <div>
+                                <i class="flaticon-right-arrow"></i>
+                            </div>
+                        </a>
+                        <ul class="collapse submenu list-unstyled" id="ui-features" data-parent="#accordionExample">
+                            <li>
+                                <a href="gen_voucher.php">Add Voucher</a>
+                            </li>
+                            <li>
+                                <a href="#"> View All Vouchers</a>
+                            </li>
+
+                            <li>
+                            <a href="#">UCC-Vouchers </a>
+                             </li>
+
+                             <li>
+                            <a href="#"> HoTECH- Vouchers </a>
+                             </li>
+
+                             <li>
+                            <a href="#"> KNUST- Vouchers </a>
+                             </li>
+
+                             <li>
+                            <a href="#"> LEGON- Vouchers </a>
+                             </li>
+                            
+                            
+                           
+                           
+                        </ul>
+                    </li>
 
                     
                 </ul>

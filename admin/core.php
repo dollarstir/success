@@ -29,7 +29,7 @@ function getknust()
 {
 include "db.php";
 
-$geto=mysqli_query($conn,"SELECT * FROM orders  WHERE venue='KNUST-Kumasi'");
+$geto=mysqli_query($conn,"SELECT * FROM orders  WHERE venue='knust'");
 
 while ($rgo=mysqli_fetch_array($geto)) 
 {
@@ -79,7 +79,7 @@ function getucc()
 {
 include "db.php";
 
-$geto=mysqli_query($conn,"SELECT * FROM orders  WHERE venue='UCC-CAPE COST'");
+$geto=mysqli_query($conn,"SELECT * FROM orders  WHERE venue='ucc'");
 
 while ($rgo=mysqli_fetch_array($geto)) 
 {
@@ -128,24 +128,25 @@ function getleg()
 {
 include "db.php";
 
-$geto=mysqli_query($conn,"SELECT * FROM orders  WHERE venue='UG-LEGON'");
+$geto=mysqli_query($conn,"SELECT * FROM orders  WHERE venue='legon'");
 
 while ($rgo=mysqli_fetch_array($geto)) 
 {
    $id= $rgo['id'];
    $inv=$rgo['inv'];
    $name=$rgo['name'];
-   $email=$rgo['email'];
+ 
    $contact=$rgo['contact'];
-   $quant=$rgo['quant'];
+  
    $venue=$rgo['venue'];
    $date=$rgo['do'];
    $status=$rgo['status'];
 
   echo' <tr>
                                                 <td>'.$id.'</td>
+                                                <td>'.$inv.'</td>
                                                 <td>'.$name.'</td>
-                                                <td>'.$email.'</td>
+                                               
                                                 <td>'.$contact.'</td>
                                                
                                                 <td>'.$quant.'</td>

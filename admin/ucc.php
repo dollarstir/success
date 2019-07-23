@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include "../db.php";
+include "db.php";
 
 
 
@@ -13,7 +13,7 @@ if (!isset($_SESSION['id']))
 
 }
 
-include "../core.php";
+include "core.php";
 
 ?>
 
@@ -172,7 +172,7 @@ include "../core.php";
                                         <tbody>
                                             <?php 
                                             
-                                            include "../db.php";
+                                            include "db.php";
                                             echo  getucc() ;
                                             
                                             

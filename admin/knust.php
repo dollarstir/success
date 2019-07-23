@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include "../db.php";
+include "db.php";
 
 
 
@@ -13,7 +13,7 @@ if (!isset($_SESSION['id']))
 
 }
 
-include "../core.php";
+include "core.php";
 
 ?>
 
@@ -132,7 +132,7 @@ include "../core.php";
                         <h3>KNUST</h3>
                         <div class="crumbs">
                             <ul id="breadcrumbs" class="breadcrumb">
-                                <li><a href="index.html"><i class="flaticon-home-fill"></i></a></li>
+                                <li><a href="#"><i class="flaticon-home-fill"></i></a></li>
                                 <li><a href="#">Venue</a></li>
                                
                                 <li class="active"><a href="#">KNUST</a> </li>
@@ -173,7 +173,7 @@ include "../core.php";
                                         <tbody>
                                             <?php 
                                             
-                                            include "../db.php";
+                                            include "db.php";
                                             echo getknust();
                                             
                                             
